@@ -1,0 +1,12 @@
+[tool.ruff]
+line-length = 88
+exclude = [
+  "backend/.git",
+  "backend/.venv",
+  "backend/build",
+  "backend/dist",
+  "backend/tests/data",
+  "backend/notes",
+  "backend/__pycache__",
+  "backend/migration"
+]
