@@ -23,9 +23,7 @@ async def activate_key(
 ):
     """
     Activate a key and allocate a free VM to the user.
-    The activation key itself serves as authentication.
     """
-    # Validate the key
     user = await validate_activation_key(session, data.activation_key)
     if user is None:
         raise HTTPException(
